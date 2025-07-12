@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: white;
+    padding: 20px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    width: 400px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    width: 100px; 
+    height: 1px;
+    margin: 5px;
+    background-color:  #ddd;
+}
+
+h2 {
+    text-align: center;
+    color: #ff6584;
+}
+.offer-box {
+    margin-top: 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* border-radius: 5px; */
+    background: white;
+}
+.offer-box1{
+    display: flex; 
+    flex-direction: column;
+    line-height: 1; 
+    justify-content: start; 
+    margin-left: 20px;
+    font-weight: bold;
+}
+.offerBox{
+    display: flex; 
+    line-height: 1; 
+    justify-content: start; 
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.unit-offer{
+    display: flex; 
+    line-height: 1; 
+    justify-content: start; 
+    font-weight: bold;
+}
+/* style Radio button */
+input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    border-color: #ff6584;
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ff6584;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* style for most popular  */
+.popular {
+    border: 2px solid #ff6584;
+    position: relative;
+}
+.popular::before {
+    content: "MOST POPULAR";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #FF6B82;
+    color: white;
+    padding: 3px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    z-index: 99999;
+}
+
+.popular::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 275px;
+  width: 120px;
+  height: 10px;
+  clip-path: polygon(
+    5px 0%, 
+    110px 0%, 
+    118px 100%,
+    0px 100%    
+  );
+  background: #D7445B;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+
+/* size and colour */
+.option {
+    display: flex;
+    align-items: center;
+    
+}
+.discount {
+    background: #FF6B82;
+    color: white;
+    padding: 2px 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.price-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    margin-left: 110px;
+}
+.price {
+    font-weight: bold;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 12px;
+}
+
+
+.selection {
+    margin-top: 10px;
+    margin-left: 45px;
+    display: none;
+}
+.selection {
+margin-top: 0px;
+display: none;
+padding: 10px;
+background: #FFF9FA;
+border-radius: 5px;
+
+}
+
+.selection-info{
+    display: flex;
+    margin-left: 25px;
+    gap: 70px;
+}
+
+.selection-info P{
+    padding-left: 5px;
+}
+
+.selection select {
+padding-right: 20px;
+border: 1px solid #ddd;
+border-radius: 5px;
+font-size: 14px;
+background: white;
+cursor: pointer;
+}
+
+.selection select:focus {
+border-color: #ff6584;
+outline: none;
+}
+
+.selection select:hover {
+border-color: #ff6584;
+}
+
+select {
+    margin: 5px;
+    padding: 5px;
+}
+
+.size{
+    width: 85px; 
+    margin-top: 0;
+}
+
+.colour{
+    width: 85px; 
+    margin-top: 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.free-delivery {
+    color: #ff6584;
+    font-weight:500;
+    font-size:medium;
+}
+.add-to-cart {
+    background: #ff6584;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.add-to-cart:hover {
+    background: #e64e6c;
+}
